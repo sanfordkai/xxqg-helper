@@ -7,18 +7,18 @@ importClass(android.database.sqlite.SQLiteDatabase);
  * @Date: 2020-3-26
  */
 
-var aCount = 8;//文章学习篇数
-var vCount = 8;//小视频学习个数
+var aCount = 6;//文章学习篇数
+var vCount = 6;//小视频学习个数
 var cCount = 2;//收藏+分享+评论次数
 
-var aTime = 90;//每篇文章学习-90秒 90*8=720秒=12分钟
-var vTime = 15;//每个小视频学习-15秒
+var aTime = 120;//每篇文章学习-120秒 120*6=720秒=12分钟
+var vTime = 10;//每个小视频学习-10秒
 var rTime = 1080;//广播收听-18分钟
 
 var commentText = ["支持党，支持国家！", "为实现中华民族伟大复兴而不懈奋斗！", "紧跟党走，毫不动摇！", "不忘初心，牢记使命", "努力奋斗，报效祖国！"];//评论内容，可自行修改，大于5个字便计分
 var aCatlog = "推荐"//文章学习类别
 
-var lCount = 3;//挑战答题轮数
+var lCount = 2;//挑战答题轮数
 var qCount = 5;//挑战答题每轮答题数
 var myScores = {};//分数
 
