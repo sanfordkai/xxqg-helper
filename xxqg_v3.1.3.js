@@ -959,7 +959,7 @@ function challengeQuestion() {
  * @return: questionArray
  */
 function getFitbQuestion() {
-    var questionCollections = className("EditText").findOnce().parent();
+    var questionCollections = className("EditText").findOnce().parent().parent();
     var questionArray = [];
     var findBlank = false;
     var blankCount = 0;
@@ -976,7 +976,7 @@ function getFitbQuestion() {
             }
             else {
                 findBlank = true;
-                blankCount += 1;
+                blankCount = (className("EditText").findOnce().parent().childCount() - 1);
             }
         }
     });
